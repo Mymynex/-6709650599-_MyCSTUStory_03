@@ -27,7 +27,7 @@ body {
       padding: 5px;
     }
   }
-  
+  body {  
 
     font-family: 'Arial', sans-serif;
     background-color: #fcf7dc;
@@ -36,6 +36,33 @@ body {
     text-align: center;
     color: #5e4837;
 }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .header {
+      font-size: 18px;
+      padding: 8px;
+    }
+    .sidebar {
+      display: none; 
+    }
+  }
+  
+  .container {
+    width: 90%; /* ใช้ % แทน px */
+    height: 80vh; /* ใช้ความสูงตามหน้าจอ */
+  }
+  
 
 header {
     background-color: #fcf7dc;
